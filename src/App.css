@@ -1,0 +1,137 @@
+html {
+  background: url("./images/background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: cover;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 16px;
+  max-width: 600px;
+  font-family: 'Overpass', sans-serif;
+}
+
+.header {
+  font-family: 'Zen Antique', serif;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 0;
+}
+
+.bio {
+  text-align: center;
+  color: white;
+  margin: 16px 0 8px 0;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.message {
+  margin-top: 16px;
+}
+
+.messages {
+  height: 56px;
+  background: none;
+  color: white;
+  overflow-y: scroll;
+  border: solid 1px white;
+  border-radius: 24px;
+  padding: 14px 16px;
+  overflow-wrap: anywhere;
+  width: calc(100% - 32px);
+  font-size: 16px;
+}
+
+.input {
+  display: block;
+  margin-top: 8px;
+  padding: 14px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  border-radius: 100px;
+  width: calc(100% - 28px);
+  background: none;
+  color: white;
+  border: solid 1px white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  padding: 12px 24px 10px 24px;
+  border-radius: 100px;
+  border: solid 2px white;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Overpass', sans-serif;
+}
+
+.waveButton:hover {
+  border: solid 2px black;
+}
+
+.photoCredit {
+  position: absolute;
+  bottom: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.number {
+  position: absolute;
+  top: 20px;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+}
+
+.num {
+  margin-left: 8px;
+  padding: 12px;
+  border: solid 1px white;
+  border-radius: 100px;
+  line-height: 0;
+}
+
+a {
+  color: white;
+}
+
+.thanks {
+  position: absolute;
+  top: 36px;
+  font-family: 'Zen Antique', serif;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
