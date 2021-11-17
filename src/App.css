@@ -11,25 +11,26 @@ html {
 
 .mainContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: "Overpass", sans-serif;
 }
 
 .dataContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 0 16px;
+  margin: 100px 16px 32px;
   max-width: 600px;
-  font-family: 'Overpass', sans-serif;
 }
 
 .header {
-  font-family: 'Zen Antique', serif;
+  font-family: "Zen Antique", serif;
   text-align: center;
   color: white;
   font-size: 32px;
@@ -67,7 +68,6 @@ html {
   display: block;
   margin-top: 8px;
   padding: 14px;
-  font-family: 'Overpass', sans-serif;
   font-size: 16px;
   border-radius: 100px;
   width: calc(100% - 28px);
@@ -91,7 +91,7 @@ html {
   color: black;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 .waveButton:hover {
@@ -99,17 +99,22 @@ html {
 }
 
 .photoCredit {
-  position: absolute;
-  bottom: 8px;
+  position: relative;
   font-size: 14px;
   color: white;
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+.photoCredit p {
+  margin: 0;
 }
 
 .number {
   position: absolute;
   top: 20px;
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 16px;
 }
 
@@ -128,10 +133,26 @@ a {
 .thanks {
   position: absolute;
   top: 36px;
-  font-family: 'Zen Antique', serif;
+  font-family: "Zen Antique", serif;
   text-align: center;
   color: white;
   font-size: 32px;
   font-weight: 600;
   margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .mainContainer {
+    justify-content: center;
+  }
+
+  .dataContainer {
+    justify-content: center;
+    margin: 0 16px 16px;
+  }
+
+  .photoCredit {
+    position: absolute;
+    bottom: 4px;
+  }
 }
