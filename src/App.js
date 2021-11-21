@@ -12,7 +12,7 @@ export default function App() {
   const [numWaves, setNumWaves] = useState(0);
   const [allWaves, setAllWaves] = useState([]);
 
-  const contractAddress = "0x44dD0568Ae1b25C8E36c5183154745a7F615dcd0";
+  const contractAddress = "0x092513286b0c65C5eeD9645f15BbC648B41c0078";
   const contractABI = abi.abi;
 
   const getAllWaves = async () => {
@@ -164,7 +164,7 @@ export default function App() {
         wavePortalContract.off("NewWave", onNewWave);
       }
     };
-  }, []);
+  }, [contractABI]);
 
   useEffect(() => {
     checkIfWalletIsConnected();
